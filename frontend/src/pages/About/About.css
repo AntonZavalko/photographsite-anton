@@ -1,0 +1,145 @@
+.about-page {
+  padding-top: 70px;
+}
+
+.about-header {
+  padding: var(--space-xl) 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.about-header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.about-content {
+  padding: var(--space-lg) 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.profile-img {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  height: auto;
+}
+
+.about-text h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-md);
+}
+
+.about-text p {
+  margin-bottom: var(--space-md);
+}
+
+.about-text h3 {
+  margin: var(--space-lg) 0 var(--space-md);
+  color: var(--dark-color);
+}
+
+.social-section {
+  margin-top: var(--space-xl);
+}
+
+.experience-section {
+  padding: var(--space-xl) 0;
+  background-color: #f9f9f9;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: var(--space-lg);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md);
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: var(--space-md);
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 4px solid white;
+}
+
+.timeline-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-xs);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: var(--space-lg) 0;
+  }
+  
+  .experience-section {
+    padding: var(--space-lg) 0;
+  }
+}
+
+.video-section {
+  margin: var(--space-xl) 0;
+}
+
+.video-section h3 {
+  margin-bottom: var(--space-md);
+  color: var(--primary-color);
+}
+
+.video-caption {
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--gray-color);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    margin: var(--space-lg) 0;
+  }
+}

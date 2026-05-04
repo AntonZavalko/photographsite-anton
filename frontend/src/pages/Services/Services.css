@@ -1,0 +1,252 @@
+.services-page {
+  padding-top: 70px;
+}
+
+/* ЗМІНЕНО: цей блок тепер виглядає як на сторінці портфоліо */
+.services-header {
+  padding: var(--space-xl) 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.services-header h1 {
+ margin-bottom: var(--space-sm);
+}
+
+.services-header p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-list {
+  padding: 60px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 450px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  color: white;
+  font-size: 2rem;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.service-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+.feature-tag {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.service-price {
+  margin: 15px 0;
+  font-weight: 700;
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+.order-btn {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  margin-top: auto;
+}
+
+.order-btn:hover {
+  background: #e74c3c;
+  transform: translateY(-2px);
+}
+
+.service-cta {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.service-cta h2 {
+  margin-bottom: 15px;
+}
+
+.service-cta p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.notification {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: #27ae60;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  z-index: 1001;
+  animation: slideInRight 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cart-floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-floating-btn:hover {
+  transform: scale(1.05);
+  background: #e74c3c;
+}
+
+.cart-badge {
+  background: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .services-page {
+    padding-top: 60px;
+  }
+  
+  .services-header {
+    padding: 40px 0;
+  }
+  
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .services-list {
+    padding: 40px 0;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-card {
+    min-height: auto;
+    padding: 20px;
+  }
+  
+  .service-cta {
+    padding: 40px 0;
+  }
+  
+  .cart-floating-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 16px;
+  }
+}

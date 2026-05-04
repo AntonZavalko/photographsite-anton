@@ -1,0 +1,77 @@
+.home-page {
+  padding-top: 70px;
+}
+
+.hero-section {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../../assets/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: var(--space-md);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-lg);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.intro-section {
+  padding: var(--space-xl) 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.intro-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.gallery-preview {
+  padding: var(--space-xl) 0;
+}
+
+.testimonials-section {
+  padding: var(--space-xl) 0;
+  background-color: #f9f9f9;
+}
+
+.widget-section {
+  padding: var(--space-xl) 0;
+  background-color: var(--light-color);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .intro-section,
+  .gallery-preview,
+  .testimonials-section,
+  .widget-section {
+    padding: var(--space-lg) 0;
+  }
+}

@@ -1,0 +1,87 @@
+.contact-page {
+  padding-top: 70px;
+}
+
+.contact-header {
+  padding: var(--space-xl) 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.contact-header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.contact-content {
+  padding: var(--space-lg) 0 var(--space-xl);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-info {
+  background-color: white;
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 3px;
+}
+
+.business-hours {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid #eee;
+}
+
+.map-container {
+  height: 400px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info {
+    order: 2;
+  }
+  
+  .contact-form-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header {
+    padding: var(--space-lg) 0;
+  }
+  
+  .map-container {
+    height: 300px;
+  }
+}
