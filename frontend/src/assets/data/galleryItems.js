@@ -13,8 +13,8 @@ export const galleryItems = [
     title: "Портретна Сесія",
     description: "Професійна портретна зйомка в міському середовищі",
     date: "Травень 2023",
-    thumbnail: require('../../assets/images/gallery/girl.jpg'),
-    full: require('../../assets/images/gallery/girl.jpg'),
+    thumbnail: "/assets/images/gallery/photocity.jpg",
+    full: "/assets/images/gallery/photocity.jpg",
     category: "portraits"
   },
   {
