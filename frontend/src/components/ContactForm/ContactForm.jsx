@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './ContactForm.css';
 
 // URL для API бекенду
-const API_URL = 'https://photographsite-anton-c1eo.vercel.app/api';
+const API_URL = 'https://photographsite-anton-x4ps.vercel.app/api';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
