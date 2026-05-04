@@ -1,12 +1,12 @@
-const pool = require('../db/database');
+const pool = require('../db');
 
 const saveContact = async (req, res) => {
   const { name, email, phone, message } = req.body;
   
   try {
     const result = await pool.query(
-      'INSERT INTO contacts (name, email, phone, message, status) VALUES ($1, $2, $3, $4, $5) RETURNING id',
-      [name, email, phone || null, message, 'new']
+      'INSERT INTO contacts (name, email, phone, message) VALUES ($1, $2, $3, $4) RETURNING id',
+      [name, email, phone, message]
     );
     
     res.status(201).json({ 

@@ -1,13 +1,13 @@
-const pool = require('../db/database');
+const pool = require('../db');
 
 const saveOrder = async (req, res) => {
   const { orderNumber, client, items, totalAmount, comment } = req.body;
   
   try {
     const result = await pool.query(
-      `INSERT INTO orders (order_number, client_name, client_email, client_phone, items, total_amount, comment, status) 
-       VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id`,
-      [orderNumber, client.fullName, client.email, client.phone, JSON.stringify(items), totalAmount, comment || null, 'pending']
+      `INSERT INTO orders (order_number, client_name, client_email, client_phone, items, total_amount, comment) 
+       VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id`,
+      [orderNumber, client.fullName, client.email, client.phone, JSON.stringify(items), totalAmount, comment || null]
     );
     
     res.status(201).json({ 
