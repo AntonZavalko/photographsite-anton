@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './CheckoutForm.css';
 
 // URL для API бекенду
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://photographsite-anton-c1eo.vercel.app/api';
 
 function CheckoutForm({ cartItems, totalAmount, onClose, onSuccess }) {
   const [formData, setFormData] = useState({
