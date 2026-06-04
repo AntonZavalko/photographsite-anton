@@ -1,10 +1,10 @@
 import './SocialButtons.css';
 
 const socialLinks = [
-  { name: 'Facebook', url: '#', icon: 'facebook' },
-  { name: 'Instagram', url: '#', icon: 'instagram' },
-  { name: 'Twitter', url: '#', icon: 'twitter' },
-  { name: 'LinkedIn', url: '#', icon: 'linkedin' }
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1J6c372hEk/?mibextid=wwXIfr', icon: 'facebook' },
+  { name: 'Instagram', url: 'https://www.instagram.com/toxa.zavalko?igsh=bzIwbWFocWJxYnNk&utm_source=qr', icon: 'instagram' },
+  { name: 'Twitter', url: 'https://x.com/antonzavalko07?s=21', icon: 'twitter' },
+  { name: 'LinkedIn', url: 'www.linkedin.com/in/антон-завалко-81a24a414', icon: 'linkedin' }
 ];
 
 function SocialButtons() {
